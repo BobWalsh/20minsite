@@ -1,0 +1,15 @@
+<div class="container">
+<h1>List of Github Users </h1>
+<div>
+  <% @users.each do |u| %>
+  <div class="panel panel-default">
+    <div class="panel-heading"><%= u['login'] %></div>
+    <div class="panel-body">
+      <img src="<%= u['avatar_url'] %>" />
+        <div><%= u['id']%> <%= u['login'] %></div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+</div>
